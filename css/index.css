@@ -1,0 +1,84 @@
+@font-face {
+  font-family: Minecraft;
+  src: url("/fonts/MinecraftRegular.otf") format("opentype")
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: Minecraft;
+  color: #fff;
+}
+
+.image {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 8, 51, 0.8), rgba(0, 8, 51, 0.8)), url(/images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  color: #fff;
+  flex-direction: column;
+}
+
+.container {
+  background-image: linear-gradient(rgba(0, 8, 51, 0.8), rgba(0, 8, 51, 0.8));
+  box-shadow: 0 0 10px 5px rgb(0, 8, 51);
+  text-align: center;
+  margin: auto;
+  padding: 50px;
+  display: inline-block;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+label p {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 17px;
+  transition: all 250ms ease;
+}
+
+label p:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+#fileName {
+  color: lime;
+  padding-bottom: 5px;
+}
+
+.parse {
+  padding: 10px;
+  margin-left: 5px;
+  margin-top: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 17px;
+  color: #fff;
+  font-size: 16px;;
+  font-family: Minecraft;
+  transition: all 250ms ease;
+}
+
+.parse:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
